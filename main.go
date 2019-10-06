@@ -78,11 +78,6 @@ func RefreshToken(entity authorization_token_repo.TokenEntity) (accessToken Acce
 			accessToken.AccessToken,
 			accessToken.ExpiresIn,
 		)
-
-		authorization_token_repo.SaveRefresh(
-			accessToken.RefreshToken,
-			accessToken.ExpiresIn,
-		)
 	}
 
 	return accessToken
