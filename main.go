@@ -1,10 +1,10 @@
 package main
 
 import (
-	"authorization_token_repo"
 	"context"
 	"encoding/json"
 	"github.com/aws/aws-lambda-go/lambda"
+	"github.com/ninjapanzer/flattireco_auth_repo"
 	"io/ioutil"
 	"log"
 	"net/http"
